@@ -1,41 +1,63 @@
-# AWS Blueprints 🚀
+# AWS Learning Journey 🚀
 
-A curated collection of real-world AWS infrastructure examples, automation scripts, and architectural patterns — designed to demonstrate best practices, improve hands-on skills, and serve as a personal reference toolkit for cloud engineering.
+This repository contains practical examples and lessons for learning AWS services. Each lesson is designed to be hands-on and focuses on specific AWS services and concepts.
 
-## 🎯 Purpose
+## Lessons
 
-This repository showcases my ongoing journey in mastering AWS by building production-grade cloud architectures, exploring AWS services in depth, and applying Infrastructure as Code (IaC) principles using tools like Terraform and CloudFormation.
+1. **EC2 Instance Basics** - [View Lesson](lessons/01-ec2-loadbalancer/)
+   - Creating a basic EC2 instance
+   - Understanding instance types and AMIs
+   - Working with security groups
+   - Using Terraform for infrastructure as code
 
-Whether you're a cloud engineer, DevOps practitioner, or simply exploring AWS, these blueprints offer modular, reusable setups that can be easily adapted to your own projects.
+## Project Structure
 
-## 📁 Structure Overview
+```
+.
+├── lessons/                    # Contains all learning lessons
+│   └── 01-ec2-loadbalancer/   # Lesson 1: EC2 Basics
+│       ├── infrastructure/     # Terraform configuration
+│       └── README.md          # Lesson-specific documentation
+├── .vscode/                    # VS Code settings and extensions
+└── README.md                  # This file
+```
 
-The repository is organized by topic:
+## Tech Stack
 
-- `00-common/` – Reusable modules (IAM, VPCs, etc.)
-- `01-networking/` – VPC, NAT gateways, subnet design
-- `02-compute/` – EC2, Auto Scaling, ECS/Fargate
-- `03-storage/` – S3, EFS usage examples
-- `04-database/` – RDS, DynamoDB integrations
-- `05-serverless/` – Lambda, API Gateway, Step Functions
-- `06-devops/` – CI/CD with CodePipeline, GitHub Actions
-- `07-monitoring/` – CloudWatch, X-Ray, logging setups
+- **Infrastructure as Code**: Terraform
+- **AWS Services**: EC2
+- **Development Tools**: VS Code
 
-Each section includes:
-- Infrastructure code (Terraform or YAML)
-- Architecture diagrams (where useful)
-- A README with explanations and deployment instructions
+## Prerequisites
 
-## 🛠️ Tech Stack
+- AWS Account
+- AWS CLI configured
+- Terraform installed
+- VS Code with recommended extensions
 
-- **AWS Services:** EC2, VPC, IAM, RDS, Lambda, S3, CloudWatch, etc.
-- **IaC:** Terraform (primarily), with some CloudFormation examples
-- **CI/CD:** GitHub Actions, AWS CodePipeline
-- **Monitoring & Security:** CloudWatch, IAM Policies, AWS Config
+## How to Use
 
-## ✅ Status
+1. Clone this repository
+2. Navigate to the lesson directory
+3. Follow the instructions in the lesson's README.md
+4. Apply the Terraform configuration
 
-🧱 Continuously evolving as I explore more advanced concepts and build new patterns.  
-📌 Contributions and feedback are welcome as long as they follow best practices.
+## Contributing
+
+Feel free to contribute to this learning journey by:
+- Adding new lessons
+- Improving existing examples
+- Fixing issues
+- Adding documentation
+
+## Learning Resources
+
+- [AWS Documentation](https://docs.aws.amazon.com/)
+- [Terraform Documentation](https://www.terraform.io/docs)
+- [AWS Free Tier](https://aws.amazon.com/free/)
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 
